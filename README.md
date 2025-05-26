@@ -6,11 +6,11 @@ This project implements an ETL (Extract, Transform, Load) pipeline in Python to 
 
 ### Data Warehouse
 
-#### 1. fact<sup>OrderLine</sup>
+#### 1. OrderLine
 
 This fact table is connected to five dimension tables (customer, seller, product, geolocation, date). It has a finer grain where each row corresponds to a unique line item within a customer order and contains the complete transaction lifecycle: the specific product purchased, the customer who bought it, the seller who fulfilled it, origin and delivery locations, and all relevant timestamps including purchase, approval, and final delivery dates. The schema for this fact table and dimensions can be found within the `schemas` folder.
 
-#### 2. fact<sup>OrderHeader</sup>
+#### 2. OrderHeader
 
 This fact table is connected to four dimension tables (customer, geolocation, date, order indicator). It has a coarser grain where each row corresponds to a unique order placed by a customer, delivered at a particular location and characterized by purchase, approval and delivery dates. The schema for this fact table and dimensions can be found within the `schemas` folder.
 
@@ -67,36 +67,36 @@ Option 2:
 Alternatively, the first three Jupyter notebooks can be bypassed since the dimension and fact tables (as CSV files) resulting from the Extract and Transform steps of the ETL process can be found within the ```data/dimension_tables``` and ```data/fact_tables``` folders, respectively.
 
 
-- Run the queries in pgAdmin
+#### Run the queries in pgAdmin
 
 Several SQL queries were made and these can be found in within the `queries` folder. The SQL files can be run independently in pgAdmin.
 
-#### Query 1 - What are the categories of the 10 most sold products during the first trimester of 2017?
+- Query 1 - What are the categories of the 10 most sold products during the first trimester of 2017?
 
-#### Query 2 - What are the top 5 cities where customers who placed the most orders during the summer of 2017 live and how many of such orders were placed?
+- Query 2 - What are the top 5 cities where customers who placed the most orders during the summer of 2017 live and how many of such orders were placed?
 
-#### Query 3 - What is the average product price in each category?
+- Query 3 - What is the average product price in each category?
 
-#### Query 4 - What is the average delivery time for products in each state?
+- Query 4 - What is the average delivery time for products in each state?
 
-#### Query 5 - From sellers who have sold 500 or more products, how many products did they sell in each city?
+- Query 5 - From sellers who have sold 500 or more products, how many products did they sell in each city?
 
-#### Query 6 - How many delivered orders with a review score of at least 3 have been paid by each payment type?
+- Query 6 - How many delivered orders with a review score of at least 3 have been paid by each payment type?
 
-#### Query 7 - Find the cities where customers who have placed at least 5 orders live, along with the total number of orders placed by these customers by city.
+- Query 7 - Find the cities where customers who have placed at least 5 orders live, along with the total number of orders placed by these customers by city.
 
-#### Query 8 - Find the unique customer identifiers that have never left any review score below 5 and who have made at least one purchase in January 2017.
+- Query 8 - Find the unique customer identifiers that have never left any review score below 5 and who have made at least one purchase in January 2017.
 
 
-- Visualize the PowerBI dashboards to answer three analytical questions
+#### Visualize the PowerBI dashboards to answer three analytical questions
 
-#### Question 1 - Which states spent the most money on orders, for each trimester between 2016-18?
+- Question 1 - Which states spent the most money on orders, for each trimester between 2016-18?
 
 To visualize the report that answers question 1, see the `order_header_fact_table.pbix` file.
 
-#### Question 2 - Over time, what are the differences in delivery times (from order approval to delivery to the customer) between metropolitan and regional areas?
+- Question 2 - Over time, what are the differences in delivery times (from order approval to delivery to the customer) between metropolitan and regional areas?
 
-#### Question 3 - Is there any temporal variation in the product categories sold in Olist?
+- Question 3 - Is there any temporal variation in the product categories sold in Olist?
 
 To visualize the report that answers questions 2 and 3, see the `order_line_fact_table.pbix` file.
 
