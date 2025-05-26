@@ -180,12 +180,12 @@ ecommerce-etl-data-warehouse
     ├── data_warehouse_mappings.py
     ├── dates.py
     └── plots.py
-├── LICENSE
-├── README.md
 ├── 00_dataset_download.py
 ├── 01_data_processing.ipynb
 ├── 02_create_dimensions.ipynb
 ├── 03_create_facts.ipynb
 ├── 04_load_dimensions.ipynb
 ├── 05_load_facts.ipynb
+├── LICENSE
+├── README.md
 └── requirements.txt
