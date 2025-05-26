@@ -1,0 +1,9 @@
+ORDER_INDICATOR_KEY,PAYMENT_TYPE,ORDER_STATUS
+1,credit_card,delivered
+2,credit_card,canceled
+3,boleto,delivered
+4,boleto,canceled
+5,voucher,delivered
+6,voucher,canceled
+7,debit_card,delivered
+8,debit_card,canceled
