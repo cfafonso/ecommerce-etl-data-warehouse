@@ -55,11 +55,13 @@ Option 2:
 
 - Run the following Jupyter notebooks sequentially:
 
-```01_data_analysis_processing.ipynb```
-```02_create_dimensions.ipynb```
-```03_create_facts.ipynb```
-```04_load_dimensions.ipynb```
-```05_load_facts.ipynb```
+```
+01_data_analysis_processing.ipynb
+02_create_dimensions.ipynb
+03_create_facts.ipynb
+04_load_dimensions.ipynb
+05_load_facts.ipynb
+```
 
 
 Alternatively, the first three Jupyter notebooks can be bypassed since the dimension and fact tables (as CSV files) resulting from the Extract and Transform steps of the ETL process can be found within the ```data/dimension_tables``` and ```data/fact_tables``` folders, respectively.
@@ -107,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Structure
 
 ```
-ecommerce-etl-pipeline
+ecommerce-etl-data-warehouse
 ├── data/
     ├── dimension_tables/
         ├── dim_customer_geolocation.csv
