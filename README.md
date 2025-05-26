@@ -172,8 +172,8 @@ ecommerce-etl-data-warehouse
     ├── order_header_fact_table.pbix
     └── order_line_fact_table.pbix
 ├── schemas/
-    ├── star_schema_order_header_accumulating_fact_table.png
-    └── star_schema_order_line_accumulating_fact_table.png
+    ├── star_schema_order_header_fact_table.png
+    └── star_schema_order_line_fact_table.png
 ├── utils/
     ├── constants.py
     ├── data_comparison.py
