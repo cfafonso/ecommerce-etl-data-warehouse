@@ -27,7 +27,7 @@ This fact table is connected to four dimension tables (customer, geolocation, da
 
 ### 1. Download or clone the repository
 
-```git clone https://github.com/cfafonso/ecommerce-etl-pipeline.git```
+```git clone https://github.com/cfafonso/ecommerce-etl-data-warehouse.git```
 
 
 ### 2. Install the required packages:
